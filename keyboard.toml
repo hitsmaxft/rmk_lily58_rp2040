@@ -37,7 +37,7 @@ keymap = [
         ["No", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5",                        "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "|"],
         ["_", "F1", "F2", "F3", "F4", "F5",                              "F6", "Minus", "Equal", "LeftBracket", "RightBracket", "No"],
         ["_", "F7", "F8", "F9", "F10", "F12",                   "LeftBracket", "RightBracket", "<", ">", "?", "MT(RShift, Grave)"],
-        ["_", "_", "_", "_", "_", "No", "No", "No"]
+        ["_", "_", "_", "_", "_", "_", "_", "No", "No", "No", "_", "_" ]
     ],
     
     # LLOWER layer (Layer 2)
@@ -46,7 +46,7 @@ keymap = [
         ["MO(3)", "!", "@", "#", "$", "%",                               "^", "&", "*", "(", ")", "|"],
         ["_", "F1", "F2", "F3", "F4", "F5",                              "Backspace", "_", "+", "{", "}", "Enter"],
         ["_", "F7", "F8", "F9", "Tab", "F6",  "{", "}", "Comma", "Dot", "Slash", "Grave"],
-        ["_", "_", "_", "Space", "Enter", "_", "_", "_"]
+        ["_", "_", "_", "_", "_", "_", "_", "No", "No", "No", "_", "_" ]
     ],
     
     # # LFUNC layer (Layer 3)
