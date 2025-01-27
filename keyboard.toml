@@ -1,0 +1,107 @@
+[keyboard]
+name = "lily58 RE"
+product_name = "lily58_rp2040"
+vendor_id = 0x8D1D
+product_id =0xB4C2 
+manufacturer = "hitsmaxft"
+chip = "rp2040"
+# board = "nice!nano_v2"
+usb_enable = true
+
+# [matrix]
+# Input and output pins are mandatory
+# input_pins = ["PIN_5", "PIN_6", "PIN_7", "PIN_8", "PIN_9"]
+# output_pins = ["GP27", "GP26", "GP22", "GP20", "GP23", "GP21"]
+# WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
+# row2col = true
+
+# col2row
+# row2col = false
+[layout]
+rows = 5
+cols = 12
+layers = 3
+keymap = [
+    # LBASE layer
+    [
+        ["Escape", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5",                     "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Backspace"],
+        ["Tab", "Q", "W", "E", "R", "T",                                   "Y", "U", "I", "O", "P", "Backslash"],
+        ["LCtrl", "MT(A, LCtrl)", "MT(S,LAlt)", "MT(D,LGui)", "MT(F, LShift)", "G",  "H", "MT(J,RShift)", "MT(K,RGui)", "MT(L, RAlt)", "MT(Semicolon, RCtrl)", "Quote"],
+        ["LShift", "Z", "X", "C", "V", "B",  "N", "M", "Comma", "Dot", "Slash", "MT(Grave, RShift)"],
+        ["_","Space", "CapsLock", "Tab", "MO(2)", "LT(3, Space)", "Enter", "MO(1)", "LeftBracket", "RightBracket","Enter","_"]
+    ],
+    
+    # LRAISE layer (Layer 1)
+    [
+        ["No", "Grave", "!", "@", "#", "$",                               "%", "^", "&", "_", "+", "_"],
+        ["No", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5",                        "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "|"],
+        ["_", "F1", "F2", "F3", "F4", "F5",                              "F6", "Minus", "Equal", "LeftBracket", "RightBracket", "No"],
+        ["_", "F7", "F8", "F9", "F10", "F12",                   "LeftBracket", "RightBracket", "<", ">", "?", "MT(RShift, Grave)"],
+        ["_", "_", "_", "_", "_", "No", "No", "No"]
+    ],
+    
+    # LLOWER layer (Layer 2)
+    [
+        ["No", "Grave", "!", "@", "#", "$",                               "%", "^", "&", "_", "+", "_"],
+        ["MO(3)", "!", "@", "#", "$", "%",                               "^", "&", "*", "(", ")", "|"],
+        ["_", "F1", "F2", "F3", "F4", "F5",                              "Backspace", "_", "+", "{", "}", "Enter"],
+        ["_", "F7", "F8", "F9", "Tab", "F6",  "{", "}", "Comma", "Dot", "Slash", "Grave"],
+        ["_", "_", "_", "Space", "Enter", "_", "_", "_"]
+    ],
+    
+    # # LFUNC layer (Layer 3)
+    # [
+    #     ["No", "F1", "F2", "F3", "F4", "F5",                             "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Grave"],
+    #     ["MO(4)", "No", "No", "MouseUp", "PageUp", "PageDown",           "No", "WheelUp", "WheelDown", "No", "P", "Minus"],
+    #     ["No", "No", "MouseLeft", "MouseDown", "MouseRight", "F6",       "Left", "Down", "UP", "Right", "Semicolon", "Quote"],
+    #     ["No", "No", "No", "No", "Home", "End",  "Button1", "Button2", "Comma", "Dot", "Slash", "RShift"],
+    #     ["LAlt", "LGui", "_", "Space", "Enter", "Accel0", "Accel1", "Accel2"]
+    # ],
+
+    # # LDEBUG layer (Layer 4)
+    # [
+    #     ["F", "F1", "F2", "F3", "F4", "F5",                              "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Grave"],
+    #     ["No", "No", "No", "MouseUp", "R", "T",                          "Y", "U", "I", "O", "P", "Minus"],
+    #     ["No", "MouseLeft", "MouseLeft", "Debug", "MouseRight", "F6",    "Left", "Down", "UP", "Down", "Semicolon", "Quote"],
+    #     ["No", "Z", "X", "C", "Home", "Reset", "N", "M", "Comma", "Dot", "Slash", "RShift"],
+    #     ["LAlt", "LGui", "_", "Space", "Enter", "No", "No", "No"]
+    # ]
+]
+
+
+[storage]
+
+[split]
+connection = "serial"
+
+# input_pins = ["PIN_5", "PIN_6", "PIN_7", "PIN_8", "PIN_9"]
+# output_pins = ["GP27", "GP26", "GP22", "GP20", "GP23", "GP21"]
+[split.central]
+rows = 5
+cols = 6
+row_offset = 0
+col_offset = 0
+serial = [
+    { instance = "UART0", tx_pin = "PIN_0", rx_pin = "PIN_1" },
+]
+
+[split.central.matrix]
+matrix_type = "normal"
+input_pins = ["PIN_5", "PIN_6", "PIN_7", "PIN_8", "PIN_9"]
+output_pins = ["PIN_27", "PIN_26", "PIN_22", "PIN_20", "PIN_23", "PIN_21"]
+
+[[split.peripheral]]
+rows = 5
+cols = 6
+row_offset = 0
+col_offset = 6
+serial = [{ instance = "UART0", tx_pin = "PIN_0", rx_pin = "PIN_1" }]
+
+[split.peripheral.matrix]
+matrix_type = "normal"
+input_pins = ["PIN_5", "PIN_6", "PIN_7", "PIN_8", "PIN_9"]
+output_pins = ["PIN_27", "PIN_26", "PIN_22", "PIN_20", "PIN_23", "PIN_21"]
+
+[behavior]
+
+tap_hold = { enable_hrm = true, prior_idle_time = "120ms", hold_timeout = "250ms", post_wait_time = "50ms"}
