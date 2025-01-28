@@ -5,6 +5,8 @@ target
 *.hex
 *.uf2
 
+.direnv
+
 .embuild
 
 .DS_Store
