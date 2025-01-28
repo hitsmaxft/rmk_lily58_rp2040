@@ -20,7 +20,7 @@ usb_enable = true
 [layout]
 rows = 5
 cols = 12
-layers = 3
+layers = 5
 keymap = [
     # LBASE layer
     [
@@ -28,44 +28,44 @@ keymap = [
         ["Tab", "Q", "W", "E", "R", "T",                                   "Y", "U", "I", "O", "P", "Backslash"],
         ["LCtrl", "MT(A, LCtrl)", "MT(S,LAlt)", "MT(D,LGui)", "MT(F, LShift)", "G",  "H", "MT(J,RShift)", "MT(K,RGui)", "MT(L, RAlt)", "MT(Semicolon, RCtrl)", "Quote"],
         ["LShift", "Z", "X", "C", "V", "B",  "N", "M", "Comma", "Dot", "Slash", "MT(Grave, RShift)"],
-        ["_","Space", "CapsLock", "Tab", "MO(2)", "LT(3, Space)", "Enter", "MO(1)", "LeftBracket", "RightBracket","Enter","_"]
+        ["__","_", "CapsLock", "Tab", "MO(2)", "LT(3, Space)", "Enter", "MO(1)", "LeftBracket", "RightBracket","_", "__"]
     ],
     
     # LRAISE layer (Layer 1)
     [
-        ["No", "Grave", "!", "@", "#", "$",                               "%", "^", "&", "_", "+", "_"],
-        ["No", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5",                        "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "|"],
-        ["_", "F1", "F2", "F3", "F4", "F5",                              "F6", "Minus", "Equal", "LeftBracket", "RightBracket", "No"],
-        ["_", "F7", "F8", "F9", "F10", "F12",                   "LeftBracket", "RightBracket", "<", ">", "?", "MT(RShift, Grave)"],
-        ["_", "_", "_", "_", "_", "_", "_", "No", "No", "No", "_", "_" ]
+        ["Grave", "WM(Kc1, LShift)", "WM(Kc2, LShift)", "WM(Kc3, LShift)", "WM(Kc4, LShift)", "WM(Kc5, LShift)", "WM(Kc6, LShift)", "WM(Kc7, LShift)", "Minus", "WM(Equal, LShift)", "_", "Backspace"],
+        ["_", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5",                        "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "WM(Backslash, LShift)"],
+        ["_", "F1", "F2", "F3", "F4", "F5",                              "F6", "Minus", "Equal", "LeftBracket", "RightBracket", "_"],
+        ["_", "F7", "F8", "F9", "F10", "F12",                            "LeftBracket", "RightBracket", "WM(Comma, LShift)", "WM(Dot, LShift)", "WM(Slash, LShift)", "WM(Grave, RShift)"],
+        ["__", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "__"]
     ],
     
     # LLOWER layer (Layer 2)
     [
-        ["No", "Grave", "!", "@", "#", "$",                               "%", "^", "&", "_", "+", "_"],
-        ["MO(3)", "!", "@", "#", "$", "%",                               "^", "&", "*", "(", ")", "|"],
-        ["_", "F1", "F2", "F3", "F4", "F5",                              "Backspace", "_", "+", "{", "}", "Enter"],
-        ["_", "F7", "F8", "F9", "Tab", "F6",  "{", "}", "Comma", "Dot", "Slash", "Grave"],
-        ["_", "_", "_", "_", "_", "_", "_", "No", "No", "No", "_", "_" ]
-    ]
+        ["Grave", "WM(Kc1, LShift)", "WM(Kc2, LShift)", "WM(Kc3, LShift)", "WM(Kc4, LShift)", "WM(Kc5, LShift)", "WM(Kc6, LShift)", "WM(Kc7, LShift)", "Minus", "WM(Equal, LShift)", "_", "Backspace"],
+        ["MO(3)", "WM(Kc1, LShift)", "WM(Kc2, LShift)", "WM(Kc3, LShift)", "WM(Kc4, LShift)", "WM(Kc5, LShift)", "WM(Kc6, LShift)", "WM(Kc7, LShift)", "WM(Kc8, LShift)", "WM(Kc9, LShift)", "WM(Kc0, LShift)", "WM(Backslash, LShift)"],
+        ["_", "F1", "F2", "F3", "F4", "F5",                              "Backspace", "KpMinus", "KpEqual", "WM(LeftBracket, LShift)", "WM(RightBracket, LShift)", "Enter"],
+        ["_", "F7", "F8", "F9", "Tab", "F6",                            "WM(LeftBracket, LShift)", "WM(RightBracket, LShift)", "Comma", "Dot", "Slash", "Grave"],
+        ["__", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "__"]
+    ],
     
     # # LFUNC layer (Layer 3)
-    # [
-    #     ["No", "F1", "F2", "F3", "F4", "F5",                             "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Grave"],
-    #     ["MO(4)", "No", "No", "MouseUp", "PageUp", "PageDown",           "No", "WheelUp", "WheelDown", "No", "P", "Minus"],
-    #     ["No", "No", "MouseLeft", "MouseDown", "MouseRight", "F6",       "Left", "Down", "UP", "Right", "Semicolon", "Quote"],
-    #     ["No", "No", "No", "No", "Home", "End",  "Button1", "Button2", "Comma", "Dot", "Slash", "RShift"],
-    #     ["LAlt", "LGui", "_", "Space", "Enter", "Accel0", "Accel1", "Accel2"]
-    # ],
+    [
+        ["_", "F1", "F2", "F3", "F4", "F5",                             "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Grave"],
+        ["MO(4)", "_", "_", "MouseUp", "PageUp", "PageDown",           "_", "MouseWheelUp", "MouseWheelDown", "_", "P", "Minus"],
+        ["_", "_", "MouseLeft", "MouseDown", "MouseRight", "F6",       "Left", "Down", "UP", "Right", "Semicolon", "Quote"],
+        ["_", "_", "_", "_", "Home", "End",  "MouseBtn1", "MouseBtn2", "Comma", "Dot", "Slash", "RShift"],
+        ["__", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "__"]
+    ],
 
     # # LDEBUG layer (Layer 4)
-    # [
-    #     ["F", "F1", "F2", "F3", "F4", "F5",                              "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Grave"],
-    #     ["No", "No", "No", "MouseUp", "R", "T",                          "Y", "U", "I", "O", "P", "Minus"],
-    #     ["No", "MouseLeft", "MouseLeft", "Debug", "MouseRight", "F6",    "Left", "Down", "UP", "Down", "Semicolon", "Quote"],
-    #     ["No", "Z", "X", "C", "Home", "Reset", "N", "M", "Comma", "Dot", "Slash", "RShift"],
-    #     ["LAlt", "LGui", "_", "Space", "Enter", "No", "No", "No"]
-    # ]
+    [
+        ["F", "F1", "F2", "F3", "F4", "F5",                              "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Grave"],
+        ["_", "_", "_", "MouseUp", "R", "T",                          "Y", "U", "I", "O", "P", "Minus"],
+        ["_", "MouseLeft", "MouseLeft", "DebugToggle", "MouseRight", "F6",    "Left", "Down", "UP", "Down", "Semicolon", "Quote"],
+        ["_", "Z", "X", "C", "Home", "Bootloader", "N", "M", "Comma", "Dot", "Slash", "RShift"],
+        ["__", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "__"]
+    ]
 ]
 
 
@@ -94,7 +94,7 @@ output_pins = ["PIN_27", "PIN_26", "PIN_22", "PIN_20", "PIN_23", "PIN_21"]
 rows = 5
 cols = 6
 row_offset = 0
-col_offset = 6
+col_offset = 0
 serial = [{ instance = "UART0", tx_pin = "PIN_0", rx_pin = "PIN_1" }]
 
 [split.peripheral.matrix]

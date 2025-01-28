@@ -25,9 +25,11 @@
 
         devShell = with pkgs;
           mkShell {
+            shellHook = "export PATH=${"$"}PATH:~/.cargo/bin;";
             buildInputs = [
               rustup
               rustfmt
+              cargo-make
               probe-rs-tools
               # pre-commit
               # rustPackages.clippy
