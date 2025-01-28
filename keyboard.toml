@@ -1,6 +1,6 @@
 [keyboard]
 name = "lily58 RE"
-product_name = "lily58_rp2040"
+product_name = "lily58-rp2040"
 vendor_id = 0x8D1D
 product_id =0xB4C2 
 manufacturer = "hitsmaxft"
@@ -47,7 +47,7 @@ keymap = [
         ["_", "F1", "F2", "F3", "F4", "F5",                              "Backspace", "_", "+", "{", "}", "Enter"],
         ["_", "F7", "F8", "F9", "Tab", "F6",  "{", "}", "Comma", "Dot", "Slash", "Grave"],
         ["_", "_", "_", "_", "_", "_", "_", "No", "No", "No", "_", "_" ]
-    ],
+    ]
     
     # # LFUNC layer (Layer 3)
     # [
@@ -100,7 +100,8 @@ serial = [{ instance = "UART0", tx_pin = "PIN_0", rx_pin = "PIN_1" }]
 [split.peripheral.matrix]
 matrix_type = "normal"
 input_pins = ["PIN_5", "PIN_6", "PIN_7", "PIN_8", "PIN_9"]
-output_pins = ["PIN_27", "PIN_26", "PIN_22", "PIN_20", "PIN_23", "PIN_21"]
+output_pins = ["PIN_21", "PIN_23", "PIN_20", "PIN_22", "PIN_26", "PIN_27"]
+#output_pins = ["PIN_27", "PIN_26", "PIN_22", "PIN_20", "PIN_23", "PIN_21"]
 
 [behavior]
 

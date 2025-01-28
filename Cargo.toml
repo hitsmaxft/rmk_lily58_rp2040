@@ -65,3 +65,6 @@ debug = true            # no overhead for bare-metal
 opt-level = "z"         # optimize for binary size
 overflow-checks = false
 lto = "fat"
+
+[dev-dependencies]
+cargo-make = "0.37.24"

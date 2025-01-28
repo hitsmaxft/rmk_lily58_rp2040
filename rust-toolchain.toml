@@ -1,6 +1,6 @@
 [toolchain]
-#channel = "stable"
-channel = "nightly"
+channel = "stable"
+#channel = "nightly"
 components = ["rust-src", "rustfmt", "llvm-tools"]
 targets = [
     "thumbv6m-none-eabi",
