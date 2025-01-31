@@ -29,7 +29,7 @@
             buildInputs = [
               rustup
               rustfmt
-              cargo-make
+              openocd-rp2040
               probe-rs-tools
               # pre-commit
               # rustPackages.clippy
