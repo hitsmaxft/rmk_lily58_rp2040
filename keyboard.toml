@@ -3,7 +3,7 @@ name = "lily58 RE"
 product_name = "lily58-rp2040"
 vendor_id = 0x8D1D
 product_id =0xB4C2 
-manufacturer = "hitsmaxft"
+manufacturer = "bhe"
 chip = "rp2040"
 # board = "nice!nano_v2"
 usb_enable = true
@@ -28,7 +28,7 @@ keymap = [
         ["Tab", "Q", "W", "E", "R", "T",                                   "Y", "U", "I", "O", "P", "Backslash"],
         ["LCtrl", "MT(A, LCtrl)", "MT(S,LAlt)", "MT(D,LGui)", "MT(F, LShift)", "G",  "H", "MT(J,RShift)", "MT(K,RGui)", "MT(L, RAlt)", "MT(Semicolon, RCtrl)", "Quote"],
         ["LShift", "Z", "X", "C", "V", "B",  "N", "M", "Comma", "Dot", "Slash", "MT(Grave, RShift)"],
-        ["__","_", "CapsLock", "Tab", "MO(2)", "LT(3, Space)", "Enter", "MO(1)", "LeftBracket", "RightBracket","_", "__"]
+        ["__","CapsLock", "Tab", "MO(2)", "LT(3, Space)","No",            "_", "Enter", "MO(1)", "LeftBracket", "RightBracket", "__"]
     ],
     
     # LRAISE layer (Layer 1)
@@ -37,7 +37,7 @@ keymap = [
         ["_", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5",                        "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "WM(Backslash, LShift)"],
         ["_", "F1", "F2", "F3", "F4", "F5",                              "F6", "Minus", "Equal", "LeftBracket", "RightBracket", "_"],
         ["_", "F7", "F8", "F9", "F10", "F12",                            "LeftBracket", "RightBracket", "WM(Comma, LShift)", "WM(Dot, LShift)", "WM(Slash, LShift)", "WM(Grave, RShift)"],
-        ["__", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "__"]
+        ["__", "No", "No", "No", "No", "No", "No", "No", "No", "No", "No", "__"]
     ],
     
     # LLOWER layer (Layer 2)
@@ -46,7 +46,7 @@ keymap = [
         ["MO(3)", "WM(Kc1, LShift)", "WM(Kc2, LShift)", "WM(Kc3, LShift)", "WM(Kc4, LShift)", "WM(Kc5, LShift)", "WM(Kc6, LShift)", "WM(Kc7, LShift)", "WM(Kc8, LShift)", "WM(Kc9, LShift)", "WM(Kc0, LShift)", "WM(Backslash, LShift)"],
         ["_", "F1", "F2", "F3", "F4", "F5",                              "Backspace", "KpMinus", "KpEqual", "WM(LeftBracket, LShift)", "WM(RightBracket, LShift)", "Enter"],
         ["_", "F7", "F8", "F9", "Tab", "F6",                            "WM(LeftBracket, LShift)", "WM(RightBracket, LShift)", "Comma", "Dot", "Slash", "Grave"],
-        ["__", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "__"]
+        ["__", "No", "No", "No", "No", "No", "No", "No", "No", "No", "No", "__"]
     ],
     
     # # LFUNC layer (Layer 3)
@@ -55,7 +55,7 @@ keymap = [
         ["MO(4)", "_", "_", "MouseUp", "PageUp", "PageDown",           "_", "MouseWheelUp", "MouseWheelDown", "_", "P", "Minus"],
         ["_", "_", "MouseLeft", "MouseDown", "MouseRight", "F6",       "Left", "Down", "UP", "Right", "Semicolon", "Quote"],
         ["_", "_", "_", "_", "Home", "End",  "MouseBtn1", "MouseBtn2", "Comma", "Dot", "Slash", "RShift"],
-        ["__", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "__"]
+        ["__", "No", "No", "No", "No", "No", "No", "No", "No", "No", "No", "__"]
     ],
 
     # # LDEBUG layer (Layer 4)
@@ -64,7 +64,7 @@ keymap = [
         ["_", "_", "_", "MouseUp", "R", "T",                          "Y", "U", "I", "O", "P", "Minus"],
         ["_", "MouseLeft", "MouseLeft", "DebugToggle", "MouseRight", "F6",    "Left", "Down", "UP", "Down", "Semicolon", "Quote"],
         ["_", "Z", "X", "C", "Home", "Bootloader", "N", "M", "Comma", "Dot", "Slash", "RShift"],
-        ["__", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "__"]
+        ["__", "No", "No", "No", "No", "No", "No", "No", "No", "No", "No", "__"]
     ]
 ]
 
