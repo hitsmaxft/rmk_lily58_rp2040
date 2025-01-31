@@ -120,8 +120,8 @@ output_pins = ["PIN_27", "PIN_26", "PIN_22", "PIN_20", "PIN_23", "PIN_21"]
 [[split.peripheral]]
 rows = 5
 cols = 6
-row_offset = 6
-col_offset = 6
+row_offset = 5
+col_offset = 0
 serial = [{ instance = "UART0", tx_pin = "PIN_0", rx_pin = "PIN_1" }]
 
 [split.peripheral.matrix]
