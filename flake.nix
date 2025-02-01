@@ -120,7 +120,9 @@
               rustfmt
               cargo-make
               probe-rs-tools
+              openocd-rp2040
               pico-dfu
+              minicom
               # pre-commit
               # rustPackages.clippy
             ] ++ (systemBuildInputs system pkgs);
